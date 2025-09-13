@@ -87,6 +87,7 @@ def main():
 	# Resolve paths
 	target_exe = _resolve_path(here, target_str)
 	working_dir = _resolve_path(here, workdir_str) if workdir_str else target_exe.parent
+	here_exe = Path(sys.argv[0]).resolve()
 
 	if not target_exe.exists():
 		_msgbox("ModBridge Error", f"Target not found:\n{target_exe}")
@@ -94,6 +95,12 @@ def main():
 	
 	if not working_dir.exists():
 		_msgbox("ModBridge Error", f"WorkDir not found:\n{working_dir}")
+		sys.exit(1)
+
+	if target_exe.resolve() == here_exe:
+		_msgbox("ModBridge loop detected",
+		f"Target points to ModBridge itself:\n{target_exe}\n\n"
+		"Make sure the target is the ORIGINAL game exe, not ModBridge.")
 		sys.exit(1)
 
 	# Build argument vector
