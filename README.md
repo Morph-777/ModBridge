@@ -17,7 +17,7 @@ Please read these Instructions, and also the instructions inside ModBridge.ini
 5. Rename GAME.exe to sth like GAME_backup.exe
 7. Now Rename the ModBridge.exe to GAME.exe
 8. Make sure you have ModBridge.ini in this same directory
-9. In ModBridge.ini set the Target .exe file and optional launch arguments
+9. In ModBridge.ini set the Target .exe file and optional launch arguments (Check examples below)
 10. Launch the original GAME in Steam, the Target.exe will launch and have SteamOverlay working!
 ---
 ### Examples of ModBridge.ini
