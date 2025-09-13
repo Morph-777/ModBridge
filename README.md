@@ -10,6 +10,8 @@ It's intended for use with standalone mods or ModOrganizer. Based on simple Pyth
 
 Please read these Instructions, and also the instructions inside ModBridge.ini
 
+> ⚠️ Disable Steam Cloud saves for chosen games, im not sure if it will put different save files in there
+
 1. Compile your own EXE file or use the release version of ModBridge.exe
 2. Get ModBridge.ini from this Github
 3. **Put both files in the games EXE directory** (sometimes \game\bin\ or sth like that)
@@ -34,24 +36,14 @@ InheritArgs = true
 Wait = true
 ```
 #### Stalker G.A.M.M.A. - Amazing Modpack for Stalker Anomaly
-1. I choose Stalker CoP in Steam to launch Gamma.  
-2. I use **Gamma as the Profile name and put "-p Gamma" without quotes in Steam launch parameters**
-3. This way, i can launch **vanilla game simply by removing the launch parameter**.
-4. Because [Mod] is the default Profile and points to vanilla EXE file.
-5. Note that the **Target in [Mod] is my Renamed original vanilla** GAME exe.
-7. Finally track your hours of playing Gamma!
+1. I choose Stalker CoP in Steam to launch Gamma.
+2. Replace the xrEngine.exe in \bin\ with ModBridge
+3. Select Gammas ModOrganizer.exe in your ModBridge.ini Target
+4. Finally track your hours of playing Gamma!
 
 ```ini
 
 [Mod]
-
-Target = E:\GAMES\SteamGames\steamapps\common\Stalker Call of Pripyat\Stalkerr-COP_backup.exe
-WorkDir = 
-Args = 
-InheritArgs = true
-Wait = true
-
-[Gamma]
 
 Target = E:\GAMMA\ModOrganizer.exe
 WorkDir = 
