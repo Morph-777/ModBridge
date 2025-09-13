@@ -63,14 +63,14 @@ InheritArgs = true
 Wait        = true
 
 [Gamma]
-Target = E:\5GAMMA\ModOrganizer.exe
+Target = E:\GAMMA\ModOrganizer.exe
 WorkDir = 
 Args = 
 InheritArgs = true
 Wait        = true
 
 [Gunslinger]
-Target = E:\GAMES\SteamGames\steamapps\common\Stalker Call of Pripyat\1Gunslinger\Play GUNSLINGER Mod.exe
+Target = E:\GAMES\SteamGames\steamapps\common\Stalker Call of Pripyat\Gunslinger\Play GUNSLINGER Mod.exe
 WorkDir = 
 Args = 
 InheritArgs = true
