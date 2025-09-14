@@ -1,10 +1,9 @@
 # ModBridge
 
-ModBridge is a small .exe file that you can use to launch any other .exe instead of the original Game.exe which Steam would launch.
+ModBridge is a lightweight launcher that acts as a replacement for a game’s original executable. Instead of starting Game.exe directly, Steam launches ModBridge, which then starts the target executable you specify. 
+It is designed for standalone mods or tools like Mod Organizer, and is written in simple Python script.
 
-***Its most important feature is that Steam Overlay and Playtime tracking will work with your mods!***
-
-It's intended for use with standalone mods or ModOrganizer. Based on simple Python script.
+**It keeps Steam Overlay working and playtime in the Mods counts towards the original game. Works even for total conversion/Mod Managers. See examples below.**
 
 ## Instructions
 
