@@ -25,7 +25,13 @@ And check out the Examples below, they might help getting it to work with your g
 ### Examples of ModBridge.ini
 
 #### XWVM - Amazing Mod for Star Wars: X-Wing (1994)
-Point the Target to xwvm.exe
+
+Workaround is to use the classic edition's DOSBox to launch XWVM and have all editions working.
+
+1. Replace ```DOSBox.exe``` inside ```\classic\DOSBOX\``` with ModBridge, add ModBridge.ini in same folder
+2. Point the Target to path of your ```xwvm.exe``` in ModBridge.ini
+3. In steam launch options choose "Classic", because we replaced classics DOSBox EXE
+4. In XWVM you can now play all editions
 ```ini
 [Mod]
 Target = D:\GAMES\SteamGames\steamapps\common\STAR WARS X-Wing\XWVM\xwvm.exe
