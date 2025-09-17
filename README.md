@@ -21,10 +21,10 @@ And check out the Examples below, they might help getting it to work with your g
 8. Make sure you have ModBridge.ini in this same directory
 9. In ModBridge.ini set the Target .exe file and optional launch arguments (Check examples below)
 10. Launch the original GAME in Steam, the Target.exe will launch and have SteamOverlay working!
----
-### Examples of ModBridge.ini
 
-#### XWVM - Amazing Mod for Star Wars: X-Wing (1994)
+## Examples of ModBridge.ini
+
+### XWVM - Amazing Mod for Star Wars: X-Wing (1994)
 
 Workaround is to use the classic edition's DOSBox to launch XWVM and have all editions working.
 
@@ -40,22 +40,23 @@ Args =
 InheritArgs = true
 Wait = true
 ```
-#### Stalker G.A.M.M.A. - Amazing Modpack for Stalker Anomaly
+---
+### Stalker G.A.M.M.A. - Amazing Modpack for Stalker Anomaly
 
-##### Multiple Profiles Advanced example:
+#### Multiple Profiles Advanced example:
 >**I hope this helps someone to make it work with their desired game.**
 
 I choose Stalker CoP in Steam and add multiple Profiles to launch Vanilla, Gamma and Gunslinger Mod. For this game, we need to perform some additional steps to workaround some of the limitations.
 1. Rename ```bin``` folder to ```bin_vanilla```
 2. Create new ```bin``` folder
-3. Place ModBridge.exe in ```bin``` folder and name it ```xrEngine.exe```, check "Run as Admin" in properties
+3. Place ModBridge.exe in ```bin``` folder and name it ```xrEngine.exe```, check "Run as Admin" in properties (necessary for Stalker games)
 4. Create new text file called ```steam_appid.txt``` inside ```bin_vanilla```
-5. Put steam appid in the txt file, for CoP it is ```41700``` (necessary to fix Steam relaunch loop)
+5. Put steam appid in the txt file, for CoP it is ```41700``` (necessary to fix Steam relaunch loop, check steamdb.info if you use different game)
 6. Use the ini from the example below, with your own paths
-7. Using the profiles, i can switch between mods with Steam Launch arguments, e.g.  "-p Gamma" without quotes, for Gamma Modpack
-8. Or i remove steam launch parameter and it will default to Profile [Mod], which is Vanilla version
-9. All playtime will count towards Stalker CoP in Steam
-10. If you run Steam as admin, Overlay should work
+8. Using the profiles, i can switch between mods with Steam Launch arguments, e.g.  "-p Gamma" without quotes, for Gamma Modpack
+9. Or i remove steam launch parameter and it will default to Profile [Mod], which is Vanilla version
+10. All playtime will count towards Stalker CoP in Steam
+11. If you run Steam as admin, Overlay should work
 
 ***Running the ModBridge and Steam as Admin is required in this case, because of XRay Engine privilege limitations. You'll know, when you get Privilege Error or Overlay doesn't work.***
 
