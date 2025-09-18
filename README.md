@@ -11,6 +11,7 @@ It is designed for standalone mods or tools like Mod Organizer, and is written i
 And check out the Examples below, they might help getting it to work with your game/mod.***
 
 > ⚠️ Disable Steam Cloud saves for chosen games, im not sure if it will confuse different save files
+> ⚠️ Updates or verifying files with steam will remove ModBridge, so I recommend to use it only with old games that get no updates.
 
 1. Compile your own EXE file or use the release version of ModBridge.exe
 2. Get ModBridge.ini from this Github
